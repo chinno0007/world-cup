@@ -71,16 +71,19 @@ body {
  ------------------*/
 
 
-.match-and-Players {
+.match-and-country {
     display: flex;
     justify-content: space-between;
 }
 
-
+.match {
+    width: 350px;
+}
 
 /* Upcoming Match  */
 .aside-info {
     padding-top: 100px;
+
 }
 
 .aside-data {
@@ -122,19 +125,48 @@ body {
 
 /* Players start */
 
-.players-detail-info {
+.match-detail-info {
     margin-left: 10px;
     padding-bottom: 50px;
 }
 
-.players-details {
+.match-details {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-row-gap: 20px;
-    grid-column-gap: 20px;
+    grid-row-gap: 40px;
+    grid-column-gap: 40px;
 
 }
 
+.matches {
+    text-align: center;
+    border: 2px solid rgb(230, 216, 216);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+
+}
+
+.matches p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.match-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    /* grid-column-gap: -10px;
+    grid-row-gap: -10px; */
+
+
+}
+
+/* 
 .players {
     border: 2px solid black;
     border-radius: 10px;
@@ -148,10 +180,10 @@ body {
 
 .players-data {
     padding-left: 5px;
-    margin: 10px;
-}
+    margin: 10px; */
+/* } */
 
-.players-data button {
+/* .players-data button {
     padding: 5px;
 }
 
@@ -163,7 +195,7 @@ body {
 .players-icons {
     display: inline-block;
     padding-right: 30px;
-}
+} */
 
 /* Players end */
 
@@ -242,12 +274,15 @@ hr {
 @media only screen and (min-width:600px) and (max-width:992px) {
 
     .container {
-        display: 100%;
-        margin: 0 auto;
+        text-align: center;
     }
 
-    .match-and-Players {
+    .match-and-country {
         display: inline-block;
+    }
+
+    .match {
+        width: 100%;
     }
 
     .aside-data {
@@ -255,7 +290,7 @@ hr {
         background-color: #FFFFFF;
     }
 
-    .players-details {
+    .match-details {
         grid-template-columns: repeat(2, 1fr);
 
     }
@@ -276,7 +311,7 @@ hr {
         text-align: center;
     }
 
-    .match-and-Players {
+    .match-and-country {
         display: block;
 
     }
@@ -290,7 +325,7 @@ hr {
         display: block;
     }
 
-    .players-details {
+    .match-details {
         grid-template-columns: repeat(1, 1fr);
 
     }
