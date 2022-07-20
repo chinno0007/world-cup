@@ -91,6 +91,7 @@ body {
     grid-template-columns: repeat(1, 3fr);
     background-color: #161616;
 
+
 }
 
 .aside-data a {
@@ -107,7 +108,7 @@ body {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-
+    display: block;
 
 }
 
@@ -231,7 +232,10 @@ hr {
 
 
 /* Media Query start */
-@media only screen and (min-width:481px) and (max-width:770px) {
+
+
+/* For Tablet Mode */
+@media only screen and (min-width:600px) and (max-width:992px) {
 
     .container {
         display: 100%;
@@ -257,6 +261,39 @@ hr {
 
     }
 
+}
 
+
+/* for mobile mode */
+@media only screen and (max-width:599px) {
+    .top-banner {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
+
+    .match-and-Players {
+        display: block;
+
+    }
+
+    .aside-data {
+        grid-template-columns: repeat(1, 1fr);
+        background-color: #FFFFFF;
+    }
+
+    .aside-holder {
+        display: block;
+    }
+
+    .players-details {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .foot-body {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
 
 }
