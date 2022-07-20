@@ -6,7 +6,7 @@
 body {
     background-color: rgb(184, 236, 219);
     font-family: 'Poppins', sans-serif;
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -34,8 +34,8 @@ body {
 
 .top-banner-info {
     padding-left: 0px;
-
-    max-width: 506px;
+    width: 100%;
+    /* max-width: 506px; */
     padding-bottom: 10px;
 }
 
@@ -45,16 +45,18 @@ body {
 }
 
 .top-banner-info button {
-    width: 187px;
-    height: 56px;
+    /* width: 187px;
+    height: 56px; */
     background: #DD0000;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 20px;
     color: white;
+    padding: 10px 20px;
 }
 
 .top-banner-img img {
     padding-right: 40px;
+    max-width: 100%;
     padding-bottom: 0px;
 
 
@@ -73,7 +75,6 @@ body {
     display: flex;
     justify-content: space-between;
 }
-
 
 
 
@@ -100,7 +101,7 @@ body {
 }
 
 .aside-holder {
-    width: 200px;
+    /* width: 200px; */
     background-color: rgb(235, 223, 223);
     margin: 10px;
     padding: 20px;
@@ -180,7 +181,7 @@ body {
 }
 
 hr {
-    width: 1000px;
+    width: 70%;
     margin: 0 auto;
 
 }
@@ -204,5 +205,58 @@ hr {
 
 }
 
+.view-all-btn {
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+    margin-bottom: 80px;
+}
+
+/* btn section */
+.view-all-btn p a {
+
+
+    background-color: #DD0000;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+
+}
 
 /* footer end */
+
+
+
+
+
+/* Media Query start */
+@media only screen and (min-width:481px) and (max-width:770px) {
+
+    .container {
+        display: 100%;
+        margin: 0 auto;
+    }
+
+    .match-and-Players {
+        display: inline-block;
+    }
+
+    .aside-data {
+        grid-template-columns: repeat(3, 1fr);
+        background-color: #FFFFFF;
+    }
+
+    .players-details {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .view-all-btn {
+        visibility: visible;
+
+    }
+
+
+
+}
