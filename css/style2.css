@@ -35,7 +35,6 @@ body {
 .top-banner-info {
     padding-left: 0px;
     width: 100%;
-    /* max-width: 506px; */
     padding-bottom: 10px;
 }
 
@@ -45,8 +44,6 @@ body {
 }
 
 .top-banner-info button {
-    /* width: 187px;
-    height: 56px; */
     background: #DD0000;
     border-radius: 10px;
     font-size: 20px;
@@ -123,7 +120,7 @@ body {
 
 
 
-/* Players start */
+/* Match Schedule start */
 
 .match-detail-info {
     margin-left: 10px;
@@ -160,48 +157,15 @@ body {
     margin-top: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
-    /* grid-column-gap: -10px;
-    grid-row-gap: -10px; */
 
 
 }
 
-/* 
-.players {
-    border: 2px solid black;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 10px;
-}
-
-.players img {
-    width: 100%;
-}
-
-.players-data {
-    padding-left: 5px;
-    margin: 10px; */
-/* } */
-
-/* .players-data button {
-    padding: 5px;
-}
-
-.players-data span {
-    padding-left: 5px;
-}
+/* Match Schedule end */
 
 
-.players-icons {
-    display: inline-block;
-    padding-right: 30px;
-} */
 
-/* Players end */
-
-
-/* footer start */
-
+/* Footer start */
 .foot {
     background-color: #161616;
     padding: 100px 20px;
@@ -238,6 +202,7 @@ hr {
 
 }
 
+/* btn section */
 .view-all-btn {
     display: flex;
     justify-content: center;
@@ -245,7 +210,7 @@ hr {
     margin-bottom: 80px;
 }
 
-/* btn section */
+
 .view-all-btn p a {
 
 
